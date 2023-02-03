@@ -26,7 +26,7 @@ const mnemonic = env.mnemonic;
     optimalRPC = (await getRPC()).toString();
   }
   console.log(`using ${optimalRPC} for anvil...`);
-  const command = spawn("anvil", ["-f", optimalRPC as string, "-m", mnemonic as string, "--chain-id", "31337"]);
+  const command = spawn("anvil", ["-f", optimalRPC as string, "-m", mnemonic as string, "--chain-id", "31337", "--silent"]);
   command.stdout.on("data", (output: any) => {
     console.log(output.toString());
   });
