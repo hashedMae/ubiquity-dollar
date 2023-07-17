@@ -23,7 +23,7 @@ git clone https://github.com/ubiquity/ubiquity-dollar.git
 cd ubiquity-dollar/
 yarn
 yarn build:all # builds the smart contracts and user interface
-yarn start & # starts the user interface and daemonize'd to continue to run tests in the background
+yarn start & # starts the user interface and daemonized to continue to run tests in the background
 yarn test:all
 ```
 ## Running workspace specific commands
